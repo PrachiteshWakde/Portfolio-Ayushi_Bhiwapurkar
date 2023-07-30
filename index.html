@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayushi Bhiwapurkar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/7119540329.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electronics And Telecommunication Engineer</p>
+            
+                <h1>Hi, I am <span> Ayushi </span><br> Bhiwapurkar from Nagpur, India.</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/crop about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>What I love about my life & what makes me more passionate about my profession
+                    Every day my day ends without any regret and turmoil about what l am doing because I love to find new alternative solutions to existing technology 
+                    Believe it or not, it really feels amazing and makes me more excited about my life. 
+                    I get to meet lots of professionals and highly knowledgeable geniuses, which is fun to have a zest for interdisciplinary knowledge</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Website</li>
+                        <li><span>Project Manegement</span><br>Design and Devlopment of Projects</li>
+                        <li><span>Device Making</span><br>Bulding IoT Devices</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oasis InfoByte</span><br>Intern</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech (Electronics and Telecommunication Engineering)</span><br>Graduation</li>
+                        <li><span>HSC</span><br>Jr. College</li>
+                        <li><span>SSC</span><br>High School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>English</span><br>Professional Proficiency</li>
+                        <li><span>Hindi</span><br>Professional Proficiency</li>
+                        <li><span>Marathi</span><br>Professional Proficiency</li>
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <!-- <i class="fa-duotone fa-screwdriver-wrench"></i> -->
+                    <h2>Python</h2>
+                    <p>I have created several projects using Sheet metal such as Motor Housing, Cooling Duct, Foam Work, etc</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <!-- <i class="fa-sharp fa-regular fa-chart-scatter"></i> -->
+                    <h2>Web Devlopment</h2>
+                    <p>I have evaluated Movie Reavenue preiction using budget, Tissue LSD consentration, using Leaner regression</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    
+                    <i class="fa-solid fa-handshake"></i>
+                    <h2>C and C++</h2>
+                    <p>I have devloped some automation devices such as Tank Automation, Automise simple Washing Machine, IOT Home Automation</p>
+                    <a href="#">Learn More</a>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>                 
+                   <p><i class="fa-solid fa-envelope"></i> Email: - a.bhiwapurkar2202@gmail.com</p>
+                   <p><i class="fa-solid fa-phone"></i> Phone No. - 7843082202</p>
+                   <a href="https://www.linkedin.com/in/ayushibhiwapurkar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BLYOzwc0QueqVoLkzbSmew%3D%3D"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                   <br>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-Mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023 Ayushi Bhiwapurkar. All Rights are Reserved</p>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxCCD0u1Ey3ZEncX8RSPPYUw2t9kKS6pFpivozcw0klH6NGDGxq8NGQHmuXcqsb6X3hkQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your message has been Relayed."
+            setTimeout(function(){msg.innerHTML =""},5000)
+            form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
